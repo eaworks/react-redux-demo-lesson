@@ -19,7 +19,7 @@ function CourseList() {
                         <h2>Sepetim</h2>
                         <div>
                             {cartItems.map((item) => {
-                                return <CourseItem {...item} />
+                                return <CourseItem key={item.id} {...item} />
                             })}
                         </div>
                         <footer>
