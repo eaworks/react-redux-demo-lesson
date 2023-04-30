@@ -3,7 +3,7 @@ const courseItems = [
         id: 'asdasdasdasd',
         title: 'C programlama eğitimi',
         price: '69',
-        img: '',
+        img: 'images/angular.jpg',
         quantity: 1
     },
     {
