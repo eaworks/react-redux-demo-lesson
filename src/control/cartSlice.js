@@ -13,9 +13,14 @@ const cartSlice = createSlice({
     reducers: {
         clearCart: (state) => {
             state.cartItems = []
+        },
+        remoteItem: (state, action) => {
+            // console.log(action.payload)
+            const itemId = action.payload;
+            state.cartItems = state.cartItems.filter((item) => item.id !== itemId)
         }
     }
 });
 
-export const { clearCart } = cartSlice.actions;
+export const { clearCart, remoteItem } = cartSlice.actions;
 export default cartSlice.reducer;

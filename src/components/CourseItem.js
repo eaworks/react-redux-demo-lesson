@@ -1,7 +1,11 @@
 import React from 'react'
 import { BsChevronDown, BsChevronUp } from 'react-icons/bs'
+import { useDispatch } from 'react-redux'
+import { remoteItem } from '../control/cartSlice';
+
 
 function CourseItem({ id, title, price, img, quantity }) {
+    const dispatch = useDispatch();
     return (
         <div className='cartItem'>
             <img src={img} alt="" />
@@ -17,7 +21,7 @@ function CourseItem({ id, title, price, img, quantity }) {
                         <BsChevronDown />
                     </button>
                 </div>
-                <button className='cardDeleteButton'>Sil</button>
+                <button className='cardDeleteButton' onClick={() => { dispatch(remoteItem(id)) }}>Sil</button>
             </div>
 
         </div>
