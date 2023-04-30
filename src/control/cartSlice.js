@@ -18,9 +18,17 @@ const cartSlice = createSlice({
             // console.log(action.payload)
             const itemId = action.payload;
             state.cartItems = state.cartItems.filter((item) => item.id !== itemId)
+        },
+        increace: (state, action) => {
+            const cartItem = state.cartItems.find((item) => item.id === action.payload);
+            cartItem.quantity += 1;
+        },
+        decreace: (state, action) => {
+            const cartItem = state.cartItems.find((item) => item.id === action.payload);
+            cartItem.quantity -= 1;
         }
     }
 });
 
-export const { clearCart, remoteItem } = cartSlice.actions;
+export const { clearCart, remoteItem, increace, decreace } = cartSlice.actions;
 export default cartSlice.reducer;
