@@ -17,7 +17,7 @@ const courseItems = [
         id: 'asdasdaswerewqdasd',
         title: 'Typescript Eğitimi',
         price: '69',
-        img: 'https://www.canboz.com/Assets/img/canboz/typescript.png',
+        img: 'https://www.canboz.com/Assets/img/canboz/typescript.jpg',
         quantity: 1
     },
     {
