@@ -1,3 +1,6 @@
+.App {
+    margin-bottom: 30px;
+}
 .navbar {
     display: flex;
     justify-content: space-around;
@@ -18,4 +21,37 @@
     position: absolute;
     bottom: 10px;
     right: 10px;
+}
+.cart{
+    text-align: center;
+}
+.cartCleanButton {
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+background-color: darkorchid;
+    color: white;
+}
+.cartItem{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 150px;
+}
+.cartInfo {
+    text-align: right;
+}
+.cardQuantityButton{
+    border: none;
+    background-color: white;
+}
+.cardQuantity {
+    margin-right: 8px;
+}
+.cardDeleteButton {
+    padding: 10px;
+    border: none;
+    border-radius: 30px;
+background-color: red;
+    color: white;
+    margin-top: 50px;
 }

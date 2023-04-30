@@ -7,14 +7,14 @@ function CourseList() {
     return (
         <>
             {quantity < 1 ? (
-                <section>
+                <section className='cart'>
                     <header>
                         <h2>Sepetim</h2>
                         <h4>bombos</h4>
                     </header>
                 </section>
             ) : (
-                <section>
+                <section className='cart'>
                     <header>
                         <h2>Sepetim</h2>
                         <div>
@@ -27,7 +27,7 @@ function CourseList() {
                             <div>
                                 <h4>Toplam Tutar <span>{total} TL</span></h4>
                             </div>
-                            <button>Temizle</button>
+                            <button className='cartCleanButton'>Temizle</button>
                         </footer>
                     </header>
                 </section>
